@@ -1,0 +1,50 @@
+@import url("./variables.css");
+@import url("./header.css");
+@import url("./fonts/Inter.ttf");
+
+body {
+  box-sizing: border-box;
+  font-family: "Inter", cursive;
+  margin: 0px auto;
+  color: var(--blue);
+  color: black;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  font-size: 16px;
+  padding: 30px 0;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.menu {
+  margin-right: 92px;
+}
+
+.menu__link {
+  color: rgba(16, 24, 40, 1);
+  text-decoration: none;
+  margin: 12.5px;
+}
+
+.menu__link_auth {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 14px;
+}
