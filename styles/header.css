@@ -1,135 +1,35 @@
-.banner {
-  padding: 62px 0 0 0;
-  /* font-size: 64px; */
-  /* line-height: 82px; */
-  /* letter-spacing: -0.5px; */
-  /* margin: auto; */
-  /* color: black; */
-}
-
-.banner .container {
+header .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 97px;
-  padding-right: 35px;
-}
-
-.circle {
-  position: relative;
-  width: 495px;
-  height: 495px;
-  background-color: blueviolet;
-  border-radius: 50%;
-  z-index: 1;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.circle img {
-  position: absolute;
-  overflow: hidden;
-  z-index: 0;
-  bottom: 0;
-  width: 70%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.circle__courses-online {
-  overflow: hidden;
-  display: block;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  position: absolute;
-  margin-left: 699px;
-  top: 120px;
-  z-index: 2;
-  max-width: 214px;
-  padding: 7px;
-  background-color: rgb(29, 253, 5);
+  margin-left: auto;
+  padding: 30px 0;
 }
 
-.massage {
-  margin-top: 38px;
+.logo {
+  margin-right: auto;
 }
 
-.massage__title {
-  color: black;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 82px;
+.menu {
+  margin-right: 92px;
 }
 
-.massage__text-selected {
-  color: blueviolet;
-}
-
-.massage .massage__desc {
-  margin-top: 20px;
-  color: black;
-  width: 400;
+.menu__link {
+  color: rgba(16, 24, 40, 1);
+  margin: 12.5px;
   font-size: 16px;
-  line-height: 28.5px;
-  max-width: 487px;
+  line-height: 24px;
+  font-weight: 500;
 }
 
-.massage__link {
-  text-decoration: none;
-
-  color: rgb(0, 0, 0);
-  margin: 36px 0;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.massage__link .massage__link_purple {
-  background-color: blueviolet;
-  padding: 16px 28px;
+.menu__link_auth {
   color: white;
-}
-
-.massage__link .massage__link_light-purple {
-  color: rgba(105, 65, 198, 1);
-  margin-left: 28px;
-  padding: 16px 28px;
-  background-color: rgba(244, 235, 255, 1);
-}
-
-.massage__lable {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-.massage__lable-item {
-  position: relative;
-  top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.massage__lable-item img {
-  padding-right: 10px;
-}
-
-.massage__lable-item-text {
-  padding-right: 34px;
-}
-
-.list-collaborations {
-  position: absolute;
-  top: 73px;
-  left: 0;
-  gap: 55px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.list-collaborations__item {
-  padding-right: 60px;
-  padding-left: 0;
+  padding: 10px 16px;
+  background-color: #7f56d9;
+  border-radius: 5px;
+  border: 1px solid #f4ebff;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
 }
