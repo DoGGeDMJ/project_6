@@ -8,7 +8,7 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 97px;
-  padding-right: 35px;
+  position: relative;
 }
 
 .background-img-left {
@@ -42,6 +42,7 @@
   z-index: 1;
   overflow: hidden;
   box-sizing: border-box;
+  margin-right: 35px;
 }
 
 .circle img {
