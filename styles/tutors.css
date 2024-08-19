@@ -1,0 +1,76 @@
+.tutors .page__desc {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  width: 768px;
+  height: 124px;
+  gap: 32px;
+  position: relative;
+}
+
+:is(.twitter, .linked-in) {
+  width: 20px;
+  height: 20px;
+  margin-left: 16px;
+}
+
+.tutor-elements__tutor-cards {
+  margin-top: 40px;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  /* border: 1px solid #b22b2b; */
+}
+
+.tutor-elements__tutor-cards img {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.tutor-elements__tutor-cards__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 228px;
+  height: 292px;
+}
+.tutor-elements__tutor-name {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(16, 24, 40, 1);
+}
+
+.tutor-elements__tutor-prof {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  /* width: 228px; */
+  color: rgba(105, 65, 198, 1);
+}
+
+.tutor-elements__tutor-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(102, 112, 133, 1);
+  margin: 8px 0 16px 0;
+}
+.tutor-elements__tutor-social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

@@ -3,6 +3,9 @@
 @import url("./header.css");
 @import url("./banner.css");
 @import url("./our_services.css");
+@import url("./explore-programs.css");
+@import url("./tutors.css");
+@import url("./review.css");
 
 body {
   box-sizing: border-box;
@@ -14,18 +17,12 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit !important;
+  /* color: inherit !important; */
 }
 
 * {
   box-sizing: border-box;
 }
-
-/* .container {
-  width: 1440px;
-  margin: 0 auto;
-  position: relative;
-} */
 
 .highlight-line {
   position: relative;

@@ -22,6 +22,15 @@
   color: #101828;
   text-align: center;
 }
+
+.page__desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: rgba(102, 112, 133, 1);
+}
+
 .our-services_elements {
   display: flex;
   flex-direction: row;
@@ -75,34 +84,102 @@
 
 /*  */
 
-.services-carousel .services-carousel__cards {
+.services-carousel {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  gap: 0px;
 }
 
-.services-carousel .services-carousel__cards img {
-  max-width: 373px;
-}
-
-.services-carousel .carousel-indicators {
+.carousel-indicators {
   position: relative;
+  padding: 0;
   margin-bottom: 0;
   gap: 12px;
+  box-sizing: content-box;
+  border-radius: 8px;
 }
 
-.services-carousel .carousel-indicators button {
-  background-color: #d9d9d9;
+.carousel-indicators [data-bs-target] {
+  background-color: rgb(44, 44, 44);
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  margin: 0;
   border: none;
+  margin: 40px 0 40px 0;
+  color: rgba(217, 217, 217, 1);
 }
 
-.services-carousel .carousel-indicators button.active {
+.carousel-indicators [data-bs-target].active {
   width: 48px;
   background-color: #7f56d9;
   border-radius: 6px;
+}
+
+.services-carousel__card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  width: 373px;
+  border-radius: 12px;
+}
+
+.services-carousel__card_active {
+  background-color: rgba(127, 86, 217, 1);
+  padding: 40px 30px;
+  width: 373px;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.services-carousel__card img {
+  background: #000000;
+}
+
+.services-carousel__card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.services-carousel__card-sub-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  margin-bottom: 22px;
+}
+.services-carousel__card-link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: rgba(127, 86, 217, 1);
+}
+
+.services-carousel__card-link_active {
+  color: rgba(255, 255, 255, 1);
+}
+
+.services-carousel__card-icon-arrow {
+  width: 5px;
+  height: 10px;
+  gap: 0px;
+  border: 1.5px 0px 0px 0px;
+  opacity: 0px;
+  fill: rgba(127, 86, 217, 1);
+}
+
+.services-carousel__card-icon-arrow-active {
+  width: 5px;
+  height: 10px;
+  gap: 0px;
+  border: 1.5px 0px 0px 0px;
+  opacity: 0px;
+  fill: rgba(255, 255, 255, 1);
 }
