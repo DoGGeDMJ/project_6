@@ -5,11 +5,16 @@ footer .footer__container {
 
 .footer__top__brand-info {
   margin: 0 64px 32px 0;
+  /* margin-top: 30px; */
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
   width: 320px;
+}
+
+.footer__top__brand-desc {
+  margin-top: 32px;
 }
 
 footer a {
@@ -23,11 +28,12 @@ footer a {
 }
 
 .footer__top {
+  /* width: 100%; */
   display: flex;
   flex-direction: row;
   /* align-items: center; */
-  justify-content: center;
-  padding: 69px 0;
+  justify-content: space-between;
+  padding: 64px 0 96px 0;
 }
 
 .footer__top__links {
@@ -53,7 +59,7 @@ footer a {
 }
 
 .footer__bottom {
-  padding: 48px;
+  /* padding: 48px; */
 }
 
 .footer__bottom__links {
@@ -74,5 +80,11 @@ footer a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 0 32px;
+  padding-bottom: 48px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(152, 162, 179, 1);
 }
