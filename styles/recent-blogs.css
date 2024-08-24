@@ -1,6 +1,7 @@
 .recent-blogs__elements {
   display: flex;
   flex-direction: column;
+  margin-bottom: 48px;
 }
 
 .recent-blogs__elements-title {
@@ -26,7 +27,6 @@
   flex-direction: row;
   padding: 0 0 32px 0;
   width: 592px;
-  margin-bottom: 48px;
 }
 
 .recent-blogs__elements-news-small__item-img {

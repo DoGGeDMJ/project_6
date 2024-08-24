@@ -78,11 +78,8 @@
 
 .our-services__sub-title__elements__user-experience
   .sub-title__elements__cover {
-  /* background-color: #7f56d9; */
   border-radius: 12px;
 }
-
-/*  */
 
 .services-carousel {
   display: flex;
