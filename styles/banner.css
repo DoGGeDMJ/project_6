@@ -246,7 +246,7 @@
 
 .list-collaborations {
   margin-top: 113px;
-  gap: 100px;
+  gap: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -258,7 +258,6 @@
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  gap: 60px;
 }
 
 .list-collaborations .list-collaborations__info {
@@ -339,5 +338,135 @@
 
   .banner .message__lable-item-text {
     padding: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .auth-links {
+    display: flex;
+    order: 1;
+  }
+
+  .menu {
+    display: flex;
+    order: 2;
+  }
+
+  .message__title {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  .statistic__info-block-video {
+    position: absolute;
+    top: 369px;
+    right: 80px;
+    z-index: 2;
+    width: 215px;
+    height: 91px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .statistic__info-block-video .statistic__info__desc-counter {
+    margin-left: 24px;
+  }
+
+  .statistic__info-block-video .statistic__info____desc-info {
+    margin-left: 24px;
+  }
+
+  .statistic__info-block-online {
+    position: absolute;
+    top: -39px;
+    left: 5px;
+    right: 20px;
+    z-index: 2;
+    width: 145px;
+    height: 169.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .statistic__info-block-online__overlay-line {
+    position: absolute;
+    top: 18px;
+    left: 67px;
+  }
+
+  .statistic__info-block-online .statistic__info__desc-counter {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .statistic__info-block-online .statistic__info____desc-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 9px;
+  }
+
+  .statistic__info-block-tutors {
+    position: absolute;
+    top: 5px;
+    left: 205px;
+    right: 373.5px;
+    z-index: 2;
+    width: 159px;
+    height: 85.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .list-collaborations {
+    margin-top: 80px;
+    gap: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list-collaborations .list-collaborations__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 180px;
+    gap: 30px;
+  }
+
+  .list-collaborations .list-collaborations__logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+  }
+
+  .list-collaborations .list-collaborations__info {
+    display: flex;
+    flex-direction: row;
+    line-height: 34px;
+    gap: 10px;
+  }
+
+  .list-collaborations .list-collaborations__info .counter {
+    font-weight: 700;
+    font-size: 30px;
+    color: #7f56d9;
+  }
+
+  .list-collaborations .list-collaborations__info .label {
+    font-weight: 300;
+    font-size: 25px;
+  }
+
+  .list-collaborations__item {
+    padding-right: 0;
   }
 }
