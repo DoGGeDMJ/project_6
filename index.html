@@ -11,6 +11,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/main.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/scripts/our_services-carousel.js" defer></script>
   </head>
   <body>
     <header>
@@ -140,7 +147,7 @@
         </div>
       </div>
     </section>
-    <!-- <div class="highlight-line"></div>
+    <div class="highlight-line"></div>
     <section class="our-services">
       <div class="container">
         <div class="our-services_elements">
@@ -152,49 +159,19 @@
           </div>
         </div>
         <div
-          id="carouselExampleDark1"
-          class="carousel carousel-dark slide"
+          id="myCarousel"
+          class="carousel slide container"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <div class="services-carousel">
-                <div class="services-carousel__card_active">
+          <div class="carousel-inner w-100">
+            <div class="carousel-item active">
+              <div class="col-md-3">
+                <div class="card card-body">
                   <div class="services-carousel__card-title">
                     User Experience
                   </div>
                   <div class="services-carousel__card-sub-title">
                     Lessons on design that cover the most recent developments.
-                  </div>
-                  <a href="#" class="services-carousel__card-link_active"
-                    >Learn More
-                    <svg class="services-carousel__card-icon-arrow-active">
-                      <use xlink:href="./assets/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="services-carousel__card">
-                  <div class="services-carousel__card-title">
-                    Web Development
-                  </div>
-                  <div class="services-carousel__card-sub-title">
-                    Classes in development that cover the most recent
-                    advancements in web.
-                  </div>
-                  <a href="#" class="services-carousel__card-link"
-                    >Learn More
-                    <svg class="services-carousel__card-icon-arrow">
-                      <use xlink:href="./assets/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="services-carousel__card">
-                  <div class="services-carousel__card-title">Marketing</div>
-                  <div class="services-carousel__card-sub-title">
-                    Marketing courses that cover the most recent marketing
-                    trends
                   </div>
                   <a href="#" class="services-carousel__card-link"
                     >Learn More
@@ -205,24 +182,9 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <div class="services-carousel">
-                <div class="services-carousel__card_active">
-                  <div class="services-carousel__card-title">
-                    User Experience
-                  </div>
-                  <div class="services-carousel__card-sub-title">
-                    Lessons on design that cover the most recent developments.
-                  </div>
-                  <a href="#" class="services-carousel__card-link_active"
-                    >Learn More
-                    <svg class="services-carousel__card-icon-arrow-active">
-                      <use xlink:href="./assets/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="services-carousel__card">
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card card-body">
                   <div class="services-carousel__card-title">
                     Web Development
                   </div>
@@ -237,8 +199,11 @@
                     </svg>
                   </a>
                 </div>
-
-                <div class="services-carousel__card">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card card-body">
                   <div class="services-carousel__card-title">Marketing</div>
                   <div class="services-carousel__card-sub-title">
                     Marketing courses that cover the most recent marketing
@@ -254,23 +219,8 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="services-carousel">
-                <div class="services-carousel__card_active">
-                  <div class="services-carousel__card-title">
-                    User Experience
-                  </div>
-                  <div class="services-carousel__card-sub-title">
-                    Lessons on design that cover the most recent developments.
-                  </div>
-                  <a href="#" class="services-carousel__card-link_active"
-                    >Learn More
-                    <svg class="services-carousel__card-icon-arrow-active">
-                      <use xlink:href="./assets/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-
-                <div class="services-carousel__card">
+              <div class="col-md-3">
+                <div class="card card-body">
                   <div class="services-carousel__card-title">
                     Web Development
                   </div>
@@ -285,12 +235,34 @@
                     </svg>
                   </a>
                 </div>
-
-                <div class="services-carousel__card">
-                  <div class="services-carousel__card-title">Marketing</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card card-body">
+                  <div class="services-carousel__card-title">
+                    User Experience
+                  </div>
                   <div class="services-carousel__card-sub-title">
-                    Marketing courses that cover the most recent marketing
-                    trends
+                    Lessons on design that cover the most recent developments.
+                  </div>
+                  <a href="#" class="services-carousel__card-link"
+                    >Learn More
+                    <svg class="services-carousel__card-icon-arrow">
+                      <use xlink:href="./assets/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card card-body">
+                  <div class="services-carousel__card-title">
+                    User Experience
+                  </div>
+                  <div class="services-carousel__card-sub-title">
+                    Lessons on design that cover the most recent developments.
                   </div>
                   <a href="#" class="services-carousel__card-link"
                     >Learn More
@@ -302,10 +274,11 @@
               </div>
             </div>
           </div>
+
           <div class="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#carouselExampleDark1"
+              data-bs-target="#myCarousel"
               data-bs-slide-to="0"
               class="active"
               aria-current="true"
@@ -313,21 +286,40 @@
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark1"
+              data-bs-target="#myCarousel"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark1"
+              data-bs-target="#myCarousel"
               data-bs-slide-to="2"
               aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="5"
+              aria-label="Slide 1"
             ></button>
           </div>
         </div>
       </div>
     </section>
-    <section class="explore-programs">
+
+    <!-- <section class="explore-programs">
       <div class="container">
         <div class="explore-programs-elements">
           <div class="page__title">
@@ -745,8 +737,9 @@
           <a href="#">Explore All Programs</a>
         </div>
       </div>
-    </section>
-    <section class="tutors">
+    </section> -->
+
+    <!-- <section class="tutors">
       <div class="container">
         <div class="tutors_elements">
           <div class="page__title">
@@ -834,8 +827,9 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="reviews-page">
+    </section> -->
+
+    <!-- <section class="reviews-page">
       <div class="container">
         <div class="our-services_elements"></div>
         <div
@@ -930,8 +924,9 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="recent-blogs">
+    </section> -->
+
+    <!-- <section class="recent-blogs">
       <div class="container">
         <div class="recent-blogs__elements">
           <div class="recent-blogs__elements-title">Our recent blogs</div>
@@ -1040,6 +1035,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="footer__container">
         <div class="container">

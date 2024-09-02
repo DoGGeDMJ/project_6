@@ -38,7 +38,8 @@
   margin: auto;
   justify-content: space-between;
   width: 768px;
-  height: 124px;
+  padding-bottom: 40px;
+  /* height: 124px; */
   gap: 20px;
 }
 
@@ -62,7 +63,7 @@
   line-height: 29px;
   color: #646464;
 }
-.sub-title__elements__link {
+/* .sub-title__elements__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
@@ -176,4 +177,178 @@
   border: 1.5px 0px 0px 0px;
   opacity: 0px;
   fill: rgba(255, 255, 255, 1);
+} */
+
+/* новая карусель со скриптом */
+.card {
+  color: rgb(0, 0, 0); /* Цвет текста для лучшей видимости */
+  background-color: #ffffff;
+  padding: 40px 30px;
+  width: 373px;
+  border-radius: 12px;
+}
+.active-card {
+  background-color: rgba(127, 86, 217, 1);
+  padding: 40px 30px;
+  width: 373px;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.carousel a {
+  text-decoration: none;
+}
+
+.active-card .services-carousel__card-link {
+  color: rgba(255, 255, 255, 1);
+}
+
+.active-card .services-carousel__card-icon-arrow {
+  width: 5px;
+  height: 10px;
+  gap: 0px;
+  border: 1.5px 0px 0px 0px;
+  opacity: 0px;
+  fill: rgba(255, 255, 255, 1);
+}
+
+.carousel-indicators {
+  position: relative;
+  padding: 0;
+  margin-bottom: 0;
+  gap: 12px;
+  box-sizing: content-box;
+  border-radius: 8px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: rgb(44, 44, 44);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  margin: 40px 0 40px 0;
+  color: rgba(217, 217, 217, 1);
+}
+
+.carousel-indicators [data-bs-target].active {
+  width: 48px;
+  background-color: #7f56d9;
+  border-radius: 6px;
+}
+
+.services-carousel__card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  width: 373px;
+  border-radius: 12px;
+}
+
+.services-carousel__card img {
+  background: #000000;
+}
+
+.services-carousel__card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.services-carousel__card-sub-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  margin-bottom: 22px;
+}
+.services-carousel__card-link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  letter-spacing: 0.02em;
+  color: rgba(127, 86, 217, 1);
+}
+
+.services-carousel__card-icon-arrow {
+  width: 5px;
+  height: 10px;
+  gap: 0px;
+  border: 1.5px 0px 0px 0px;
+  opacity: 0px;
+  fill: rgba(127, 86, 217, 1);
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  transition-duration: 0.1s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+/* display 4 */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-item-next:not(.carousel-item-start) {
+    transform: translateX(25%) !important;
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-item-prev:not(.carousel-item-end),
+  .active.carousel-item-start,
+  .carousel-item-prev:not(.carousel-item-end) {
+    transform: translateX(-25%) !important;
+  }
+
+  .carousel-item-next.carousel-item-start,
+  .active.carousel-item-end {
+    transform: translateX(0) !important;
+  }
+
+  .carousel-inner .carousel-item-prev,
+  .carousel-item-prev:not(.carousel-item-end) {
+    transform: translateX(-25%) !important;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  :is(.page__title, .page__sub-title) {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 40px 0;
+    justify-content: center;
+    width: 368px;
+    height: 124px;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .page__title {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .our-services_elements {
+    padding-bottom: 0;
+  }
 }
