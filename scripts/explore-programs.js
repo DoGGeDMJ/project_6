@@ -2,7 +2,7 @@ $(document).ready(function () {
   const maxPerSlide = 2; // Количество карточек, отображаемых за раз
 
   // Клонирование карточек для карусели
-  $(".our-services .carousel .carousel-item").each(function () {
+  $("carousel .carousel-item").each(function () {
     let $currentItem = $(this);
     let $next = $currentItem.next().length
       ? $currentItem.next()
@@ -21,12 +21,12 @@ $(document).ready(function () {
 
   // Обновление стилей карточек
   function updateCardStyles() {
-    const $activeCards = $(".carousel-item.active .card");
-    $(".carousel-item .card").removeClass("active-card").addClass("card"); // Сброс стилей
+    const $activeCards = $("carousel-item.active .card");
+    $("carousel-item .card").removeClass("active-card").addClass("card"); // Сброс стилей
 
-    if ($activeCards.length) {
-      $activeCards.first().addClass("active-card"); // Синий цвет для последней карточки
-    }
+    // if ($activeCards.length) {
+    //   $activeCards.first().addClass("active-card"); // Синий цвет для последней карточки
+    // }
   }
 
   // Привязка событий

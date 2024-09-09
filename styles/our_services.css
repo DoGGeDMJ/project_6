@@ -50,18 +50,35 @@
   gap: 40px;
 }
 
-.sub-title__elements__name {
+.our_services .sub-title__elements__name {
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
   color: #000000;
   margin-bottom: 30px;
 }
-.sub-title__elements__desc {
+.our_services .sub-title__elements__desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 29px;
   color: #646464;
+}
+
+.our_services .services-carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 0px;
+}
+
+.our_services .explore-program__card-img-top {
+  display: block;
+  width: 336px;
+  height: 240px;
+  border-radius: 4px;
+  opacity: 0px;
 }
 /* .sub-title__elements__link {
   font-weight: 500;
