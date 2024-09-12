@@ -1,3 +1,7 @@
+.explore-programs {
+  overflow-x: hidden;
+}
+
 .explore-programs .card-body {
   width: 336px;
   position: relative;
