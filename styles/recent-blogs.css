@@ -136,6 +136,12 @@
 }
 
 @media only screen and (max-width: 390px) {
+  .recent-blogs__elements-title {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
   .recent-blogs__elements-news {
     margin: 15px 0 0 15px;
     grid-template-columns: 1fr;
@@ -153,6 +159,7 @@
     /* width: 100%; */
     display: grid;
     justify-self: center;
+    padding: 5px;
     /* align-items: center; */
   }
 
@@ -172,6 +179,6 @@
   }
 
   .recent-blogs__elements-news-big__item .recent-blogs__elements__info-title {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
