@@ -46,7 +46,7 @@ header .container {
   }
 
   .menu {
-    margin: 0 auto 0 0;
+    margin: 10px auto 0 0;
     width: 100%;
     display: flex;
     justify-content: center;

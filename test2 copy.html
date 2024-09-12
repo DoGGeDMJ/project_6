@@ -1,386 +1,112 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Тестировка нового блока</title>
-    <link rel="stylesheet" href="./styles/fonts.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <style>
-      body {
-        background-color: #5d1c1c;
-      }
-
-      .card {
-        color: rgb(0, 0, 0); /* Цвет текста для лучшей видимости */
-        background-color: #ffffff;
-        padding: 40px 30px;
-        width: 373px;
-        border-radius: 12px;
-      }
-
-      .services-carousel__card-link {
-        color: rgba(255, 255, 255, 1);
-      }
-      .card:active:first-child {
-        background-color: rgba(127, 86, 217, 1);
-        padding: 40px 30px;
-        width: 373px;
-        border-radius: 12px;
-        color: rgba(255, 255, 255, 1);
-      }
-
-      .carousel a:active {
-        text-decoration: none;
-        color: rgba(255, 255, 255, 1);
-      }
-
-      .carousel a .services-carousel__card-icon-arrow:active {
-        width: 5px;
-        height: 10px;
-        gap: 0px;
-        border: 1.5px 0px 0px 0px;
-        opacity: 0px;
-        fill: rgba(255, 255, 255, 1);
-      }
-
-      .carousel-indicators {
-        position: relative;
-        padding: 0;
-        margin-bottom: 0;
-        gap: 12px;
-        box-sizing: content-box;
-        border-radius: 8px;
-      }
-
-      .carousel-indicators [data-bs-target] {
-        background-color: rgb(44, 44, 44);
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        border: none;
-        margin: 40px 0 40px 0;
-        color: rgba(217, 217, 217, 1);
-      }
-
-      .carousel-indicators [data-bs-target].active {
-        width: 48px;
-        background-color: #7f56d9;
-        border-radius: 6px;
-      }
-
-      .services-carousel__card {
-        background-color: #ffffff;
-        padding: 40px 30px;
-        width: 373px;
-        border-radius: 12px;
-      }
-
-      .services-carousel__card img {
-        background: #000000;
-      }
-
-      .services-carousel__card-title {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 36px;
-        letter-spacing: 0.02em;
-        text-align: left;
-        margin-bottom: 30px;
-      }
-
-      .services-carousel__card-sub-title {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 28.8px;
-        text-align: left;
-        margin-bottom: 22px;
-      }
-      .services-carousel__card-link {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 25.2px;
-        letter-spacing: 0.02em;
-        color: rgba(127, 86, 217, 1);
-      }
-
-      .services-carousel__card-icon-arrow {
-        width: 5px;
-        height: 10px;
-        gap: 0px;
-        border: 1.5px 0px 0px 0px;
-        opacity: 0px;
-        fill: rgba(127, 86, 217, 1);
-      }
-
-      @media (max-width: 768px) {
-        .carousel-inner .carousel-item > div {
-          display: none;
-        }
-        .carousel-inner .carousel-item > div:first-child {
-          display: block;
-        }
-      }
-
-      .carousel-inner .carousel-item.active,
-      .carousel-inner .carousel-item-start,
-      .carousel-inner .carousel-item-next,
-      .carousel-inner .carousel-item-prev {
-        transition-duration: 0.1s;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 70px;
-      }
-
-      /* display 4 */
-      @media (min-width: 768px) {
-        .carousel-inner .carousel-item-right.active,
-        .carousel-inner .carousel-item-next,
-        .carousel-item-next:not(.carousel-item-start) {
-          transform: translateX(25%) !important;
-        }
-
-        .carousel-inner .carousel-item-left.active,
-        .carousel-item-prev:not(.carousel-item-end),
-        .active.carousel-item-start,
-        .carousel-item-prev:not(.carousel-item-end) {
-          transform: translateX(-25%) !important;
-        }
-
-        .carousel-item-next.carousel-item-start,
-        .active.carousel-item-end {
-          transform: translateX(0) !important;
-        }
-
-        .carousel-inner .carousel-item-prev,
-        .carousel-item-prev:not(.carousel-item-end) {
-          transform: translateX(-25%) !important;
-        }
-      }
-    </style>
+    <title>Document</title>
   </head>
-  <body>
-    <div
-      id="myCarousel"
-      class="carousel slide container"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner w-100">
-        <div class="carousel-item active">
-          <div class="col-md-3">
-            <!--  -->
-            <div class="card card-body">
-              <div class="services-carousel__card-title">User Experience</div>
-              <div class="services-carousel__card-sub-title">
-                Lessons on design that cover the most recent developments.
-              </div>
-              <a href="#" class="services-carousel__card-link"
-                >Learn More
-                <svg class="services-carousel__card-icon-arrow">
-                  <use xlink:href="./assets/sprite.svg#arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-            <!--  -->
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col-md-3">
-            <!--  -->
-            <div class="card card-body">
-              <div class="services-carousel__card-title">Web Development</div>
-              <div class="services-carousel__card-sub-title">
-                Classes in development that cover the most recent advancements
-                in web.
-              </div>
-              <a href="#" class="services-carousel__card-link"
-                >Learn More
-                <svg class="services-carousel__card-icon-arrow">
-                  <use xlink:href="./assets/sprite.svg#arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-            <!--  -->
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col-md-3">
-            <!--  -->
-            <div class="card card-body">
-              <div class="services-carousel__card-title">Marketing</div>
-              <div class="services-carousel__card-sub-title">
-                Marketing courses that cover the most recent marketing trends
-              </div>
-              <a href="#" class="services-carousel__card-link"
-                >Learn More
-                <svg class="services-carousel__card-icon-arrow">
-                  <use xlink:href="./assets/sprite.svg#arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-            <!--  -->
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col-md-3">
-            <div class="card card-body">
-              <div class="services-carousel__card-title">Web Development</div>
-              <div class="services-carousel__card-sub-title">
-                Classes in development that cover the most recent advancements
-                in web.
-              </div>
-              <a href="#" class="services-carousel__card-link"
-                >Learn More
-                <svg class="services-carousel__card-icon-arrow">
-                  <use xlink:href="./assets/sprite.svg#arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col-md-3">
-            <!--  -->
-            <div class="card card-body">
-              <div class="services-carousel__card-title">User Experience</div>
-              <div class="services-carousel__card-sub-title">
-                Lessons on design that cover the most recent developments.
-              </div>
-              <a href="#" class="services-carousel__card-link"
-                >Learn More
-                <svg class="services-carousel__card-icon-arrow">
-                  <use xlink:href="./assets/sprite.svg#arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-            <!--  -->
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col-md-3">
-            <div class="card card-body">
-              <!--  -->
-              <div class="services-carousel__card-title">User Experience</div>
-              <div class="services-carousel__card-sub-title">
-                Lessons on design that cover the most recent developments.
-              </div>
-              <a href="#" class="services-carousel__card-link"
-                >Learn More
-                <svg class="services-carousel__card-icon-arrow">
-                  <use xlink:href="./assets/sprite.svg#arrow-right"></use>
-                </svg>
-              </a>
+  <style>
+    .container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+      /* grid-auto-rows: minmax(100px, auto); */
+      display: grid;
+    }
 
-              <!--  -->
-            </div>
-          </div>
+    .item {
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .item_1 {
+      /* grid-column: 1 / 3; */
+      /* grid-row: 1 / 3; */
+    }
+
+    @media only screen and (max-width: 390px) {
+      .container {
+        /* width: 370px; */
+        grid-template-columns: 0.75fr 0.75fr;
+        grid-gap: 10px;
+        /* grid-auto-rows: minmax(100px, auto); */
+        display: grid;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item item_1">
+        <img src="./assets/theresa.png" alt="img" />
+        <div class="tutor-elements__tutor-name">Theresa Webb</div>
+        <div class="tutor-elements__tutor-prof">
+          Application Support Analyst Lead
         </div>
-        <!-- <div class="carousel-item">
-          <div class="col-md-3">
-            <div class="card card-body">
-              <img class="img-fluid" src="http://placehold.it/380?text=7" />
-            </div>
-          </div>
+        <div class="tutor-elements__tutor-desc">
+          Former co-founder of Opendoor. Early staff at Spotify and Clearbit.
         </div>
-        <div class="carousel-item">
-          <div class="col-md-3">
-            <div class="card card-body">
-              <img class="img-fluid" src="http://placehold.it/380?text=8" />
-            </div>
-          </div>
-        </div> -->
+        <div class="tutor-elements__tutor-social-media">
+          <svg class="twitter">
+            <use xlink:href="./assets/sprite.svg#twitter"></use>
+          </svg>
+          <svg class="linked-in">
+            <use xlink:href="./assets/sprite.svg#linked-in"></use>
+          </svg>
+        </div>
       </div>
-      <!-- <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button> -->
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide-to="4"
-          aria-label="Slide 5"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide-to="5"
-          aria-label="Slide 1"
-        ></button>
+      <div class="item item_2">
+        <img src="./assets/theresa.png" alt="img" />
+        <div class="tutor-elements__tutor-name">Theresa Webb</div>
+        <div class="tutor-elements__tutor-prof">
+          Application Support Analyst Lead
+        </div>
+        <div class="tutor-elements__tutor-desc">
+          Former co-founder of Opendoor. Early staff at Spotify and Clearbit.
+        </div>
+        <div class="tutor-elements__tutor-social-media">
+          <svg class="twitter">
+            <use xlink:href="./assets/sprite.svg#twitter"></use>
+          </svg>
+          <svg class="linked-in">
+            <use xlink:href="./assets/sprite.svg#linked-in"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="item item_3">
+        <img src="./assets/theresa.png" alt="img" />
+        <div class="tutor-elements__tutor-name">Theresa Webb</div>
+        <div class="tutor-elements__tutor-prof">
+          Application Support Analyst Lead
+        </div>
+        <div class="tutor-elements__tutor-desc">
+          Former co-founder of Opendoor. Early staff at Spotify and Clearbit.
+        </div>
+        <div class="tutor-elements__tutor-social-media">
+          <svg class="twitter">
+            <use xlink:href="./assets/sprite.svg#twitter"></use>
+          </svg>
+          <svg class="linked-in">
+            <use xlink:href="./assets/sprite.svg#linked-in"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="item item_4">
+        <img src="./assets/theresa.png" alt="img" />
+        <div class="tutor-elements__tutor-name">Theresa Webb</div>
+        <div class="tutor-elements__tutor-prof">
+          Application Support Analyst Lead
+        </div>
+        <div class="tutor-elements__tutor-desc">
+          Former co-founder of Opendoor. Early staff at Spotify and Clearbit.
+        </div>
+        <div class="tutor-elements__tutor-social-media">
+          <svg class="twitter">
+            <use xlink:href="./assets/sprite.svg#twitter"></use>
+          </svg>
+          <svg class="linked-in">
+            <use xlink:href="./assets/sprite.svg#linked-in"></use>
+          </svg>
+        </div>
       </div>
     </div>
-
-    <script>
-      $(".carousel .carousel-item").each(function () {
-        var minPerSlide = 2; // Установлено на 5
-        var next = $(this).next();
-        if (!next.length) {
-          next = $(this).siblings(":first");
-        }
-        next.children(":first-child").clone().appendTo($(this));
-
-        for (var i = 0; i < minPerSlide - 1; i++) {
-          // -1, так как первый элемент уже скопирован
-          next = next.next();
-          if (!next.length) {
-            next = $(this).siblings(":first");
-          }
-
-          next.children(":first-child").clone().appendTo($(this));
-        }
-      });
-    </script>
   </body>
 </html>

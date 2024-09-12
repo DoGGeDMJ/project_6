@@ -2,7 +2,7 @@ $(document).ready(function () {
   const maxPerSlide = 2; // Количество карточек, отображаемых за раз
 
   // Клонирование карточек для карусели
-  $("carousel .carousel-item").each(function () {
+  $(".carousel .carousel-item").each(function () {
     let $currentItem = $(this);
     let $next = $currentItem.next().length
       ? $currentItem.next()
