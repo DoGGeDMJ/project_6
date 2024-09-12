@@ -79,3 +79,26 @@ footer a {
   text-align: left;
   color: rgba(152, 162, 179, 1);
 }
+
+@media only screen and (max-width: 390px) {
+  .footer__top {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    /* grid-auto-rows: minmax(100px, auto); */
+    width: 100%;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+  }
+
+  .footer__top__links > div:first-child {
+    width: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__top__links {
+    display: flex;
+  }
+}

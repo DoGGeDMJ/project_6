@@ -85,7 +85,7 @@
 
   .tutor-elements__tutor-cards__item {
     width: 100%;
-    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+    box-shadow: 0 12px 16px -4px rgba(16, 24, 40, 0.08);
     padding: 10px 0 10px 0;
   }
   .tutor-elements__tutor-cards {
