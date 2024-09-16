@@ -283,6 +283,7 @@
   padding-left: 0;
 }
 
+/* TODO: Remove copy media query for 800px */
 @media only screen and (max-width: 800px) {
   .banner {
     overflow: hidden;
