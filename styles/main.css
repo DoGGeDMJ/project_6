@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 a {
   text-decoration: none;
